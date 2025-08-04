@@ -48,6 +48,7 @@ Query OK, 0 rows affected (0,00 sec)
 ```
 
 1.5. Выполнил запрос на получение списка прав для пользователя sys_temp. (скриншот)
+
 [Список прав sys_temp](https://github.com/electr0n4ik/db-homework-2/blob/main/images/image2.png)
 
 1.6. Переподключился к базе данных от имени sys_temp. Перед этим сделал смену аутентификации.
@@ -56,10 +57,10 @@ Query OK, 0 rows affected (0,00 sec)
 mysql -u sys_temp -p
 ```
 
-Для смены типа аутентификации с sha2 используйте запрос:
+Для смены типа аутентификации с sha2 использовал запрос:
 
-```sql
-ALTER USER 'sys_test'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+```shell
+ALTER USER 'sys_temp'@'localhost' IDENTIFIED WITH mysql_native_password BY '12345';
 ```
 
 1.6. По ссылке https://downloads.mysql.com/docs/sakila-db.zip скачал дамп базы данных.
